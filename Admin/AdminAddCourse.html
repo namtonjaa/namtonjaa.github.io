@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Course</title>
+<link rel="stylesheet" href="../css/LoggedinMain.css">
+<link rel="stylesheet" href="../css/Courselist.css">
+</head>
+<meta charset="UTF-8">
+<body>
+
+  <div class="header">
+    Create Course
+  </div>
+
+  <ul>
+    <li><a href="AdminMain.html">Main</a></li>
+    <li><a href="AdminAddCourse.html">Create course</a></li>
+    <li style="float:right"><a href="../Index.html">Logout</a></li>
+  </ul>
+
+  <div style="content">
+
+    <h1>Enrolled Course</h1>
+    <form action="AdminMain.html">
+    <table id = "Courselist">
+      <tr>
+        <th class="column1">Course ID</th>
+        <td><input type="text" name="CourseID" value="953XXX"></td>
+      </tr>
+      <tr>
+        <th class="column2">Course Name</th>
+        <td><input type="text" name="CourseName" value="Don't Starve Together"></td>
+      </tr>
+      <tr>
+        <th class="column3">Teacher Name</th>
+        <td><input type="text" name="TeacherName" value="Prof.Julian Hazard"></td>
+      </tr>
+      <tr>
+        <th class="column4">Semester</th>
+        <td>
+          <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </td>
+        </tr>
+      <tr>
+        <th class="column5">Academic Year</th>
+        <td><input type="text" name="AcademicYear" value="1996"></td>
+      </tr>
+      <tr>
+        <th class="column6">Maximum Seat</th>
+        <td><input type="text" name="MaximumSeat" value="50"></td>
+      </tr>
+      <tr>
+        <th class="column7">Number of Credit</th>
+        <td><input type="text" name="NumberOfCredit" value="3"></td>
+      </tr>
+
+      <tr>
+      <th></th>
+      <td><input class="buttonAdmin"type="submit" value="Create Course"></td>
+      </tr>
+
+
+    </table>
+  </div>
+
+</body>
+</html>
