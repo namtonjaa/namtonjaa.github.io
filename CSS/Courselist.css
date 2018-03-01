@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: OpenSans-Regular;
+}
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
+}
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#Courselist {
+  border-collapse: collapse;
+  width: 80%;
+}
+
+#Courselist td, #Courselist th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    opacity: 0.9;
+}
+
+
+
+#Courselist tr:nth-child(even){background-color: #d9d9d9;}
+#Courselist tr:nth-child(odd){background-color: #f2f2f2;}
+
+#Courselist tr:hover {background-color: #a6a6a6;}
+
+#Courselist th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: none;
+    color: black;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+table {
+      margin: 2% 2% 2% 2%;
+}
+
+td {
+  color: #333333;
+}
+
+.buttonAdmin {
+  padding: 5px 25px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4d4d4d;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px #999;
+}
+
+.button {
+  padding: 5px 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4d4d4d;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px #999;
+}
+
+.button:hover {background-color: #1a1a1a}
+
+.button:active {
+  background-color: #4d4d4d;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}

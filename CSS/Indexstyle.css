@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: OpenSans-Regular;
+  background-image: url("../picture/index.jpg");
+}
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
+}
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.login {
+    border-radius: 5px;
+    background-color: white;
+    opacity: 0.8;
+    padding: 20px;
+    margin: 30% 25% 20% 25%;
+    text-align: center;
+}
+
+.login1 {
+    border-radius: 5px;
+    background-color: white;
+    opacity: 0.8;
+    padding: 5px;
+    margin: 40% 25% 20% 25%;
+    text-align: center;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #b37700;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type=submit]:hover {
+    background-color: #996600;
+}

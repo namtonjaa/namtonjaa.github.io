@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: OpenSans-Regular;
+  background-image: url("../picture/loggedin.jpg");
+}
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+}
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
+}
+body {
+    margin: 0;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #808080;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+h1, h2 {
+  color: white;
+}
