@@ -3,6 +3,7 @@
 <head>
 <title>Teacher Login</title>
 <link rel="stylesheet" href="../CSS/LoginStyle.css">
+<link rel="stylesheet" href="../css/Modal.css">
 </head>
 <meta charset="UTF-8">
 <body>
@@ -19,8 +20,23 @@
         <input type="text" name="lastname" value="Password">
         <br><br>
         <input type="submit" value="Login">
-        </form>
+      </form>
+      <button id="myBtn">Incorrect Email or password login</button>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Invalid Username or Password. Please try again.</p>
+        </div>
+
       </div>
+            <!-- <button type="button">Login</button> -->
+          </div>
+          <script src="../js/Modal.js">
+      </script>
     <!-- </div>
     <div class="column">
       <h1>Picture here</h1>
