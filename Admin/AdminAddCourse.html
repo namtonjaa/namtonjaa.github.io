@@ -4,6 +4,7 @@
 <title>Create Course</title>
 <link rel="stylesheet" href="../CSS/LoggedinMain.css">
 <link rel="stylesheet" href="../CSS/Courselist.css">
+<link rel="stylesheet" href="../CSS/Modal.css">
 </head>
 <meta charset="UTF-8">
 <body>
@@ -21,7 +22,6 @@
   <div style="content">
 
     <h1>Enrolled Course</h1>
-    <form action="AdminMain.html">
     <table id = "Courselist">
       <tr>
         <th class="column1">Course ID</th>
@@ -58,12 +58,26 @@
 
       <tr>
       <th></th>
-      <td><input class="buttonAdmin"type="submit" value="Create Course"></td>
+      <td>
+        <button id="myBtn" class="button">Create Course</button>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>The course '953XXX : Don't Starve Together By Prof.Julian Hazard' has been created.</p>
+        </div>
+
+      </div>
+      </td>
       </tr>
 
 
     </table>
   </div>
-
+<script src="../js/Modal.js">
+</script>
 </body>
 </html>

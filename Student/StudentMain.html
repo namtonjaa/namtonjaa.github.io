@@ -4,6 +4,7 @@
 <title>Student</title>
 <link rel="stylesheet" href="../CSS/LoggedinMain.css">
 <link rel="stylesheet" href="../CSS/Courselist.css">
+<link rel="stylesheet" href="../CSS/Modal.css">
 </head>
 <meta charset="UTF-8">
 <body>
@@ -40,7 +41,18 @@
         <td>1</td>
         <td>3</td>
         <td>
-            <button class="button">Delete</button>
+          <button id="myBtn" class="button">Delete</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>The course '953XXX : Modern E-Sport' has been deleted from your course list.</p>
+          </div>
+
+        </div>
         </td>
       </tr>
 
@@ -55,6 +67,7 @@
 </table>
     </div>
   </div>
-
+  <script src="../js/Modal.js">
+  </script>
 </body>
 </html>
