@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Course List</title>
+<link rel="stylesheet" href="../css/LoggedinMain.css">
+<link rel="stylesheet" href="../css/Courselist.css">
+<link rel="stylesheet" href="../css/logout_btn.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/isLoggedin.js"></script>
+<script src="../js/logout.js"></script>
+<script src="../js/viewCourse.js"></script>
+</head>
+<meta charset="UTF-8">
+<body>
+
+  <div class="header">
+    Course List
+  </div>
+
+  <ul>
+    <li><a href="StudentMain.html">Main</a></li>
+    <li><a href="Courselist.html">Add course</a></li>
+    <li><a href="Payment.html">Payment</a></li>
+   <li style="float:right"><input type = "button" value = "Logout" id = "logout_btn"</li>
+  </ul>
+
+	<h1 id="fullName"></h1>
+	<script>
+	document.getElementById("fullName").innerHTML = "Welcom " + localStorage.getItem("firstName")+
+	" " + localStorage.getItem("lastName")+ "." ;
+	</script>
+  <h2>Here is Course List</h2>
+
+  <table id = "Courselist">
+
+    <tr>
+      <th class="column1">Course ID</th>
+      <th class="column2">Course Name</th>
+      <th class="column2">Professor Name</th>
+      <th class="column3">Semester</th>
+      <th class="column4">Credit</th>
+      <th class="column5">Seat</th>
+      <th class="column6">Add</th>
+    </tr>
+
+  </div>
+</table>
+</body>
+</html>

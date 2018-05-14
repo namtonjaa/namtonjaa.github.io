@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Payment</title>
+<link rel="stylesheet" href="../css/LoggedinMain.css">
+<link rel="stylesheet" href="../css/Courselist.css">
+<link rel="stylesheet" href="../css/logout_btn.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/isLoggedin.js"></script>
+<script src="../js/logout.js"></script>
+</head>
+<meta charset="UTF-8">
+<style>
+  .payment {margin: 20% 20% 20% 20%;}
+</style>
+<body>
+
+  <div class="header">
+    Payment
+  </div>
+
+    <ul>
+      <li><a href="StudentMain.html">Main</a></li>
+      <li><a href="Courselist.html">Add course</a></li>
+      <li><a href="Payment.html">Payment</a></li>
+     <li style="float:right"><input type = "button" value = "Logout" id = "logout_btn"</li>
+  </ul>
+
+    <div class="row">
+
+      <div class="column">
+	<h1 id="fullName"></h1>
+	<script>
+	document.getElementById("fullName").innerHTML = "Welcom " + localStorage.getItem("firstName")+
+	" " + localStorage.getItem("lastName")+ "." ;
+	</script>
+        <h2>Total Payment</h2>
+          <table id = "Courselist">
+            <tr>
+              <th class="column1">Course ID</th>
+              <th class="column2">Course Name</th>
+              <th class="column3">Credit</th>
+              <th class="column4">Cost</th>
+            </tr>
+            <tr>
+              <td>953XXX</td>
+              <td>Modern E-Sport</td>
+              <td>3</td>
+              <td>60</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Total</td>
+              <td>3</td>
+              <td>60</td>
+            </tr>
+          </table>
+      </div>
+
+      <div class="column">
+        <div class="payment">
+          <h1>Please pay 60B</h1>
+        </div>
+      </div>
+
+</body>
+</html>

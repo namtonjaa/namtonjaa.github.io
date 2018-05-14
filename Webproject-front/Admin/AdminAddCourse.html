@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Course</title>
+	<link rel="stylesheet" href="../css/LoggedinMain.css">
+	<link rel="stylesheet" href="../css/Courselist.css">
+	<link rel="stylesheet" href="../css/logout_btn.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/isLoggedinAdmin.js"></script>
+	<script src="../js/logout.js"></script>
+</head>
+<meta charset="UTF-8">
+<body>
+
+  <div class="header">
+    Create Course
+  </div>
+
+  <ul>
+    <li><a href="AdminMain.html">Main</a></li>
+    <li><a href="AdminAddCourse.html">Create course</a></li>
+    <li style="float:right"><input type = "button" value = "Logout" id = "logout_btn"</li>
+  </ul>
+
+  <div style="content">
+
+    <h1>Enrolled Course</h1>
+    <!--<form action="AdminMain.html">-->
+    <table id = "Courselist">
+      <tr>
+        <th class="column1">Course ID</th>
+        <td><input type="text" id="courseId" name="CourseID"></td>
+      </tr>
+      <tr>
+        <th class="column2">Course Name</th>
+        <td><input type="text" id="courseName" name="CourseName"></td>
+      </tr>
+      <tr>
+        <th class="column3">Teacher Name</th>
+        <td><input type="text" id="teacherName" name="TeacherName"></td>
+      </tr>
+      <tr>
+        <th class="column4">Semester</th>
+        <td>
+          <select id="semester-select">
+            <option value="1" selected="true">1</option>
+            <option value="2">2</option>
+          </td>
+      </tr>
+      <tr>
+        <th class="column6">Maximum Seat</th>
+        <td><input type="text" id="maxSeat" name="MaximumSeat"></td>
+      </tr>
+      <tr>
+        <th class="column7">Number of Credit</th>
+        <td><input type="text" id="credit" name="NumberOfCredit"></td>
+      </tr>
+
+      <tr>
+      <th></th>
+      <td>
+        <button id="create-course-btn" onclick="createCourse();" class="button">Create Course</button>
+      </td>
+      </tr>
+
+
+    </table>
+  </div>
+</body>
+</html>
